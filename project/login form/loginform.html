@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2| using Inline css</title>
+    
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    display: grid;
+    height: 100%;
+    place-items: center;
+}
+
+body {
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('nature1.jpg')  center;
+    background-size: cover;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+
+.wrapper {
+    width: 400px;
+    padding: 40px;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.15);
+    z-index: 99;
+    background: #3df72c35;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+}
+
+.input_box {
+    margin: 20px 0px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 10px;
+    border: 0;
+    outline: none;
+    background: transparent;
+    color: #ffffffc9;
+    font-size: 12px;
+    letter-spacing: 1px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    color: #ffffffc9;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+button {
+    border: 0;
+    outline: none;
+    width: 100%;
+    padding: 15px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 7px;
+    color: #000;
+    background: #06e76c;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ffffffe5;
+}
+
+.card {
+    z-index: 99;
+    color: #16dfa2;
+    text-align: center;
+    margin-top: -100px;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container"> 
+        <div class="wrapper">
+            <div class="input_box">
+                <input type="text" id="fName" placeholder="First Name" >
+                
+            </div>
+            <div class="input_box">
+                <input type="text" id="lName" placeholder="Last Name">
+            </div>
+            <div class="input_box">
+                <input type="email" id="emailF" placeholder="Email Address">
+            </div>
+            <div class="input_box">
+                <input type="password" id="passF" placeholder="Password">
+            </div>
+            <button id="submit">Submit</button>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>
